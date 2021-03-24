@@ -19,4 +19,4 @@ The above command assumes all repository contents are under current working dire
 
 ## 2. **m86asm**
 
-### A rudimentary assembler for Micro86 instructions.
+### A rudimentary assembler for micro86 instructions.
