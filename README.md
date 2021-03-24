@@ -1,5 +1,8 @@
 # Projects:
 
+Multiple projects are intended to be located in this repository. Currently the
+following projects are included: micro86.
+
 ## 1. **Micro86** #
 
 ### An emulator for a simplified model of the Intel 8086 processor. ##
