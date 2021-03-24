@@ -28,6 +28,6 @@ Code for the assembler is written in Java and should work with JDK version 7 or
 above. This project may be rewritten in some other language in the future (e.g.,
 C or Go).
 
-The assembler compiles from a simple predefined assembly language for micro86
-into machine instructions. Optionally, it can also compile into functional but
-unconventional C++ code.
+The assembler assembles from a simple predefined assembly language for micro86
+into micro86 machine instructions. Optionally, it can also translate into
+functional but unconventional C++ code.
