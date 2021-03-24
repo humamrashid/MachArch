@@ -1,0 +1,20 @@
+# Micro86 instructions.
+# Assembled using M86Asm.
+# Dated: 14:43:29, 10/24/2014.
+# Approx. assembling time: 17 ms.
+# Number of instructions: 5.
+# Number of memory units allocated: 4.
+
+# === CODE === #
+
+02020005
+04020006
+07020008
+03020007
+01000000
+00000000
+00000002
+0000000A
+00000014
+
+# === EOF === #

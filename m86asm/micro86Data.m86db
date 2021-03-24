@@ -1,0 +1,49 @@
+# micro86Data
+
+# Data used for generating Micro86 tables.
+# Note: this is a read-only file used for initialization.
+
+# Lines beginning with '#' are comments.
+# Syntax: 'opcode = mnemonic'
+# 'o' indicates the instruction 'has operand'.
+# 'i' indicates the instruction is immediate.
+# Opcodes are in hexadecimal.
+
+# System Control:
+0100    =   HALT
+
+# Data Movement:
+0202    =   LOAD    o
+0201    =   LOADI   o   i
+0302    =   STORE   o
+
+# Arithmetic:
+0402    =   ADD     o
+0401    =   ADDI    o   i
+0502    =   SUB     o
+0501    =   SUBI    o   i
+0602    =   MUL     o
+0601    =   MULI    o   i
+0702    =   DIV     o
+0701    =   DIVI    o   i
+0802    =   MOD     o
+0801    =   MODI    o   i
+
+# Comparison:
+0902    =   CMP     o
+0901    =   CMPI    o   i
+
+# Branching:
+0A01    =   JMPI    o   i
+0B01    =   JEI     o   i
+0C01    =   JNEI    o   i
+0D01    =   JLI     o   i
+0E01    =   JLEI    o   i
+0F01    =   JGI     o   i
+1001    =   JGEI    o   i
+
+# Input/Output:
+1100    =   IN
+1200    =   OUT
+
+# EOF.
