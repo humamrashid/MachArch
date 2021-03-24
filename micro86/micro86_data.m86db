@@ -1,0 +1,74 @@
+# micro86Data:
+#
+# Data used for generating Micro86 tables.
+# Note: this is a read-only file used for initialization.
+# Constant definitions are found in 'micro86_dataset.h'.
+
+# Metadata:
+
+## Lines beginning with MD_FILE_COMMENT (i.e., '#') are comments.
+## Syntax is case-sensitive except as noted.
+
+## Syntax:
+
+### '<OPCODE> = <MNEMONIC> [o [i]]'
+### Angle brackets indicate required values.
+### Square brackets indicate optional values.
+### optional 'o' indicates the instruction 'has operand'.
+### optional 'i' following 'o' indicates intstruction 'is immediate'.
+### Opcodes are maximally 4-digit, capitalized, hexadecimal literals.
+### Mnemonics are in capitals by convention only.
+### Neither opcodes nor mnemonics are allowed to have any whitespace
+### characters.
+
+### WARNINGS:
+
+#### Length of each line must not exceed MD_LINE_SIZE.
+#### Length of each part of instruction must not exceed MD_ITEM_SIZE.
+#### Delimiter MD_FILE_DELIM (i.e., whitespace) of amount >= 1 is
+#### required between each item.
+#### The equal sign (=) is also required as part of the instruction
+#### syntax.
+#### Instructions are mapped 1:1, therefore no duplicates are allowed
+#### for opcodes or mnemonics.
+
+# Instructions:
+
+## System Control:
+0100    =   HALT
+
+## Data Movement:
+0202    =   LOAD    o
+0201    =   LOADI   o   i
+0302    =   STORE   o
+
+## Arithmetic:
+0402    =   ADD     o
+0401    =   ADDI    o   i
+0502    =   SUB     o
+0501    =   SUBI    o   i
+0602    =   MUL     o
+0601    =   MULI    o   i
+0702    =   DIV     o
+0701    =   DIVI    o   i
+0802    =   MOD     o
+0801    =   MODI    o   i
+
+## Comparison:
+0902    =   CMP     o
+0901    =   CMPI    o   i
+
+## Branching:
+0A01    =   JMPI    o   i
+0B01    =   JEI     o   i
+0C01    =   JNEI    o   i
+0D01    =   JLI     o   i
+0E01    =   JLEI    o   i
+0F01    =   JGI     o   i
+1001    =   JGEI    o   i
+
+## Input/Output:
+1100    =   IN
+1200    =   OUT
+
+# EOF.
