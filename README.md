@@ -20,3 +20,7 @@ The above command assumes all repository contents are under current working dire
 ## 2. **m86asm**
 
 ### A rudimentary assembler for micro86 instructions.
+
+Code for the assembler is written in Java and should work with JDK version 7 or
+above. Code may be rewritten in some other language in the future (e.g., C or
+Go).
