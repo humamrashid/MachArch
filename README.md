@@ -1,6 +1,8 @@
-# **Micro86** #
+# Projects:
 
-## An emulator for a simplified model of the Intel 8086 processor. ##
+## 1. **Micro86** #
+
+### An emulator for a simplified model of the Intel 8086 processor. ##
 
 
 Compiling on Unix-like systems with GCC and GLib 2.x (replace x with
