@@ -12,10 +12,13 @@ Compiling on Unix-like systems with GCC and GLib 2.x (replace x with
 your version number):
 
 ```
-gcc -D M86_DEBUG=false -D M86DS_DEBUG=false `pkg-config --cflags --libs glib-2.x` -O *.c common/*.c memory/*.c -o <binary>
+gcc -D M86_DEBUG=false -D M86DS_DEBUG=false `pkg-config --cflags \
+    --libs glib-2.x` -O *.c common/*.c memory/*.c -o <binary>
 ```
 
-The above command assumes all repository contents are under current working directory. The "programs" directory is used to contain sample programs and their output; it is unnecessary for compilation purposes.
+The above command assumes all repository contents are under current working
+directory. The "programs" directory is used to contain sample programs and their
+output; it is unnecessary for compilation purposes.
 
 ## 2. **m86asm**
 
@@ -23,5 +26,8 @@ The above command assumes all repository contents are under current working dire
 
 Code for the assembler is written in Java and should work with JDK version 7 or
 above. This project may be rewritten in some other language in the future (e.g.,
-C or Go). The assembler compiles to a simple predefined assembly language for
-micro86 as well as functional but unconventional C++ code.
+C or Go).
+
+The assembler compiles from a simple predefined assembly language for micro86
+into machine instructions. Optionally, it can also compile into functional but
+unconventional C++ code.
